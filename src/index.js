@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './Router';
+import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root'),
 );
