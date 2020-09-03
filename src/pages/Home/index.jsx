@@ -12,7 +12,7 @@ const Home = () => (
     <Main>
       <Container>
         <Titulo>Bem-vindos ao Aluranban!</Titulo>
-        <Botao>Entrar no board</Botao>
+        <Botao to="/board">Entrar no board</Botao>
       </Container>
     </Main>
     <Footer />

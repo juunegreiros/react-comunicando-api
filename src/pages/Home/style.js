@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const HomeWrapper = styled.div`
   display: flex;
@@ -25,7 +26,7 @@ export const Titulo = styled.h1`
   color: var(--darkerBlue);
 `;
 
-export const Botao = styled.button`
+export const Botao = styled(Link)`
   background-color: var(--primary);
   border: none;
   border-radius: 4px;
@@ -33,4 +34,5 @@ export const Botao = styled.button`
   cursor: pointer;
   margin: 1rem;
   padding: 1rem;
+  text-decoration: none;
 `;
