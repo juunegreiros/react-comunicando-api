@@ -1,22 +1,16 @@
 import React from 'react';
-import EstiloBase from '../../settings/theme';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { HomeWrapper, Container, Main, Titulo, Botao } from './style';
+import Pagina from '../../components/Pagina';
+import { Container, Main, Titulo, Botao } from './style';
 
 const Home = () => (
-  <HomeWrapper>
-    <EstiloBase />
-
-    <Header />
+  <Pagina>
     <Main>
       <Container>
         <Titulo>Bem-vindos ao Aluranban!</Titulo>
         <Botao to="/board">Entrar no board</Botao>
       </Container>
     </Main>
-    <Footer />
-  </HomeWrapper>
+  </Pagina>
 );
 
 export default Home;
