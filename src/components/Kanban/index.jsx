@@ -1,24 +1,11 @@
 import React from 'react';
 import KanbanWrapper from './style';
-import Lista from './Coluna';
+import Coluna from './Coluna';
 
-const Kanban = () => {
-  const tarefas = [
-    {
-      quadro: 'backlog',
-      texto: 'primeira tarefa',
-      id: 1,
-    },
-    {
-      quadro: 'todo',
-      texto: 'segunda tarefa',
-      id: 2,
-    },
-  ];
-
+const Kanban = ({ tarefas }) => {
   return (
     <KanbanWrapper>
-      <Lista tarefas={tarefas} tipo="backlog" titulo="Backlog" />
+      <Coluna tarefas={tarefas} tipo="backlog" titulo="Backlog" />
     </KanbanWrapper>
   );
 };

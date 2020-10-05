@@ -15,7 +15,7 @@ const Lista = ({ tarefas, titulo, tipo }) => {
     <ListaWrapper tipo={tipo} cores={cores}>
       <Titulo>{titulo}</Titulo>
       {tarefasTipo.map((tarefa) => (
-        <Tarefa key={tarefa.id} texto={tarefa.texto} />
+        <Tarefa key={`tarefa__${tarefa.texto}`} texto={tarefa.texto} />
       ))}
     </ListaWrapper>
   );
